@@ -17,7 +17,7 @@ searchUser.addEventListener("keyup", e => {
     github.getUser(userText).then(data => {
       if (data.profile.message === "Not Found") {
         //   show alert
-        ui.showAlert("Usedr not foun", "alert alert-danger");
+        ui.showAlert("User not foun", "alert alert-danger");
       } else {
         // show profile
         ui.showProfile(data.profile);
